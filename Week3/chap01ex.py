@@ -37,6 +37,7 @@ def CleanFemResp(df):
 
 def main():
     resp = ReadFemResp()
+    print(resp)
 
     assert (len(resp) == 7643)
     assert (resp.pregnum.value_counts()[1] == 1267)
